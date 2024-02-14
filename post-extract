@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+git -C "/home/dokku/$APP" show $REV -s --format='{ "build": "%h", "date": "%cD", "author": "%an" }' > "$TMP_WORK_DIR/version.json"
